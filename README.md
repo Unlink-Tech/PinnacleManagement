@@ -1,6 +1,6 @@
-# Pinnacle Management
+# Pinnacle Millgrove
 
-Marketing site for Pinnacle Management — Next.js 15 (App Router), TypeScript, Tailwind CSS v4 and Framer Motion. Light theme only, white primary with a green secondary palette.
+Marketing site for Pinnacle Millgrove — Next.js 15 (App Router), TypeScript, Tailwind CSS v4 and Framer Motion. Light theme only, white primary with a green secondary palette.
 
 ## Getting started
 

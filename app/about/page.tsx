@@ -16,7 +16,7 @@ import { focusAreas, homeStats, values } from "@/lib/content";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Lorem ipsum dolor sit amet. Who we are, what we value and how we work at Pinnacle Management.",
+    "Lorem ipsum dolor sit amet. Who we are, what we value and how we work at Pinnacle Millgrove.",
 };
 
 export default function AboutPage() {

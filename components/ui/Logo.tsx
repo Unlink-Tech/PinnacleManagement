@@ -28,7 +28,7 @@ export function Logo({
   return (
     <Link
       href="/"
-      aria-label="Pinnacle Management, home"
+      aria-label="Pinnacle Millgrove, home"
       className={cn("group flex items-center gap-3", className)}
     >
       <LogoMark />
@@ -47,7 +47,7 @@ export function Logo({
             tone === "dark" ? "text-brand-300" : "text-brand-600",
           )}
         >
-          Management
+          Millgrove
         </span>
       </span>
     </Link>

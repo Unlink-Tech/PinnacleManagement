@@ -67,7 +67,7 @@ export function Footer() {
                   Pinnacle
                 </span>
                 <span className="mt-1 text-[0.62rem] font-semibold uppercase tracking-[0.28em] text-brand-300">
-                  Management
+                  Millgrove
                 </span>
               </span>
             </div>

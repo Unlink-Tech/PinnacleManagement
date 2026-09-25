@@ -1,12 +1,12 @@
 import type { IconName } from "@/components/ui/Icon";
 
 export const site = {
-  name: "Pinnacle Management",
+  name: "Pinnacle Millgrove",
   shortName: "Pinnacle",
   tagline: "Clarity at every level.",
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pinnacle Management delivers advisory, compliance and corporate services with a straight-to-the-point approach.",
-  email: "hello@pinnaclemanagement.com",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pinnacle Millgrove delivers advisory, compliance and corporate services with a straight-to-the-point approach.",
+  email: "hello@pinnaclemillgrove.com",
   phone: "+65 6123 4567",
   address: "1 Raffles Place, #20-01, Singapore 048616",
   hours: "Mon – Fri · 9:00am – 6:00pm",

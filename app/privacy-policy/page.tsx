@@ -7,7 +7,7 @@ import { lastUpdated, privacySections } from "@/lib/legal";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "How Pinnacle Management collects, uses and protects your personal information.",
+    "How Pinnacle Millgrove collects, uses and protects your personal information.",
 };
 
 export default function PrivacyPolicyPage() {

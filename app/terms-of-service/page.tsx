@@ -7,7 +7,7 @@ import { lastUpdated, termsSections } from "@/lib/legal";
 export const metadata: Metadata = {
   title: "Terms of Service",
   description:
-    "The terms that govern your use of the Pinnacle Management website and services.",
+    "The terms that govern your use of the Pinnacle Millgrove website and services.",
 };
 
 export default function TermsOfServicePage() {

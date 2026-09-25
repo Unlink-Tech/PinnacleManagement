@@ -12,7 +12,7 @@ import { homeFaqs, site } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Lorem ipsum dolor sit amet. Get in touch with the Pinnacle Management team.",
+    "Lorem ipsum dolor sit amet. Get in touch with the Pinnacle Millgrove team.",
 };
 
 const channels: {
