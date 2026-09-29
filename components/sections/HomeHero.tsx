@@ -11,7 +11,7 @@ import { services } from "@/lib/content";
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
-const headline = ["Clarity", "at every", "level."];
+const headline = ["Better decisions.", "Stronger foundations."];
 
 export function HomeHero() {
   const ref = useRef<HTMLDivElement>(null);
@@ -46,7 +46,7 @@ export function HomeHero() {
               {headline.map((word, i) => (
                 <span key={word} className="block overflow-hidden">
                   <motion.span
-                    className={i === 2 ? "gradient-text inline-block" : "inline-block"}
+                    className={i === 1 ? "gradient-text inline-block" : "inline-block"}
                     initial={{ y: "110%" }}
                     animate={{ y: 0 }}
                     transition={{ duration: 0.85, delay: 0.1 + i * 0.1, ease }}
@@ -63,9 +63,7 @@ export function HomeHero() {
               transition={{ duration: 0.7, delay: 0.45, ease }}
               className="mt-7 max-w-xl text-lg leading-relaxed text-ink-soft"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-              ad minim veniam, quis nostrud exercitation.
+              We help businesses simplify complex commerce environments with practical guidance across technology, payments and operational infrastructure. Our approach is designed to support informed decision-making and provide a dependable foundation for sustainable expansion.
             </motion.p>
 
             <motion.div

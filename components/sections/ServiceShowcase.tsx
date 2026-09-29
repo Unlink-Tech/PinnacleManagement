@@ -1,7 +1,6 @@
 import { Reveal } from "@/components/ui/Reveal";
 import { ParallaxImage } from "@/components/ui/ParallaxImage";
 import { Eyebrow } from "@/components/ui/SectionHeading";
-import { Button } from "@/components/ui/Button";
 import { Icon } from "@/components/ui/Icon";
 import type { Service } from "@/lib/content";
 
@@ -72,28 +71,23 @@ export function ServiceShowcase({ services }: { services: Service[] }) {
                 {service.excerpt}
               </p>
 
-              <ul className="mt-8 grid gap-x-8 gap-y-3 sm:grid-cols-2">
+              <ul className="mt-8 grid gap-x-8 gap-y-6 border-t border-line pt-8 sm:grid-cols-2">
                 {service.capabilities.map((cap) => (
-                  <li
-                    key={cap.title}
-                    className="flex items-center gap-3 text-[0.95rem] font-medium text-ink"
-                  >
-                    <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-100 text-brand-700">
+                  <li key={cap.title} className="flex gap-3.5">
+                    <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-100 text-brand-700">
                       <Icon name="check" className="h-3.5 w-3.5" strokeWidth={3} />
                     </span>
-                    {cap.title}
+                    <span>
+                      <span className="block text-[0.95rem] font-semibold leading-snug tracking-tight text-ink">
+                        {cap.title}
+                      </span>
+                      <span className="mt-1.5 block text-sm leading-relaxed text-ink-soft">
+                        {cap.body}
+                      </span>
+                    </span>
                   </li>
                 ))}
               </ul>
-
-              <Button
-                href={`/services/${service.slug}`}
-                variant="secondary"
-                icon="arrowUpRight"
-                className="mt-9"
-              >
-                Explore {service.heroKicker}
-              </Button>
             </Reveal>
           </div>
         );

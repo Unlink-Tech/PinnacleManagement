@@ -6,8 +6,8 @@ import { Blobs } from "@/components/ui/Decor";
 
 export function CtaBand({
   eyebrow = "Get started",
-  title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  description = "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+  title = "Move forward with clarity",
+  description = "Tell us where you want to go and what     stands in the way. We’ll explore your priorities, understand the wider context and determine how we can help.",
   primary = { label: "Contact Us", href: "/contact" },
   secondary = { label: "Our Services", href: "/services" },
 }: {

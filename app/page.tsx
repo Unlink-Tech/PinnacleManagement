@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal, RevealGroup, RevealItem } from "@/components/ui/Reveal";
@@ -49,11 +50,11 @@ export default function HomePage() {
             eyebrow="Our Services"
             title={
               <>
-                Everything you need,{" "}
-                <span className="text-brand-600">nothing you don&apos;t.</span>
+                A stronger foundation{" "}
+                <span className="text-brand-600">for what&apos;s ahead</span>
               </>
             }
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            description="We help businesses improve the systems and processes behind their digital operations. From technology and payments to day-to-day business infrastructure, our advisory approach focuses on creating greater efficiency, resilience, and room for future development."
           />
           <Reveal delay={0.2}>
             <Button href="/services" variant="secondary">
@@ -78,11 +79,10 @@ export default function HomePage() {
         eyebrow="Why Pinnacle"
         title={
           <>
-            Clarity at every level, from the first call to a long-term
-            partnership.
+            We believe effective advisory starts with clear communication and continues through every stage of the relationship.
           </>
         }
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        description="From the initial conversation to ongoing support, we keep priorities, decisions and next steps transparent and aligned with your business objectives."
         stats={[
           { value: "24h", label: "Response time" },
           { value: "100%", label: "Senior-led delivery" },
@@ -97,8 +97,8 @@ export default function HomePage() {
           <div>
             <SectionHeading
               eyebrow="Why Pinnacle"
-              title="A partner that keeps the complicated parts simple."
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+              title="Advise shaped by your interests."
+              description="Our recommendations are guided by your business requirements rather than predetermined technology or vendor preferences. We assess available options objectively, explain the practical considerations clearly, and focus on solutions that align with your objectives, resources, and long-term plans."
             />
             <Reveal delay={0.2}>
               <Button href="/about" className="mt-9">
@@ -132,8 +132,8 @@ export default function HomePage() {
         <SectionHeading
           align="center"
           eyebrow="How we work"
-          title="Four steps from first call to long-term partnership."
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
+          title="From insights to implementation."
+          description="Our engagements follow a defined framework that keeps priorities clear and progress visible. You will know what we are working on, what comes next and what practical outputs you can take forward when the engagement concludes."
         />
         <div className="mt-16">
           <ProcessTimeline steps={processSteps} />
@@ -146,7 +146,18 @@ export default function HomePage() {
           <SectionHeading
             eyebrow="FAQ"
             title="Questions, answered."
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Can't find what you need?"
+            description={
+              <>
+                Reach out to us if you have any questions!{" "}
+                <Link
+                  href="/contact"
+                  className="font-medium text-brand-700 underline underline-offset-4"
+                >
+                  Contact us directly
+                </Link>
+                .
+              </>
+            }
           />
           <Reveal delay={0.1}>
             <Accordion items={homeFaqs} />

@@ -32,30 +32,7 @@ export function Footer() {
 
       <Container className="relative z-10">
         {/* CTA band */}
-        <Reveal className="grid gap-8 border-b border-white/10 py-16 lg:grid-cols-[1.4fr_1fr] lg:items-center lg:py-20">
-          <div>
-            <h2 className="text-balance text-3xl font-semibold leading-tight tracking-tight text-white sm:text-4xl">
-              Lorem ipsum dolor sit amet. Let&apos;s talk about what&apos;s next.
-            </h2>
-            <p className="mt-4 max-w-xl text-brand-100/75">
-              Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua.
-            </p>
-          </div>
-          <div className="flex flex-wrap gap-3 lg:justify-end">
-            <Button href="/contact" variant="light" size="lg">
-              Contact Us
-            </Button>
-            <Button
-              href="/services"
-              size="lg"
-              icon="arrowUpRight"
-              className="border border-white/20 bg-transparent text-white hover:bg-white/10"
-            >
-              Our Services
-            </Button>
-          </div>
-        </Reveal>
+        
 
         {/* Link columns */}
         <div className="grid gap-12 py-16 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr]">

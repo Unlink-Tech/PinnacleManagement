@@ -77,7 +77,7 @@ export const privacySections: LegalSection[] = [
     id: "contact",
     heading: "Contact Us",
     body: [
-      "Lorem ipsum dolor sit amet. If you have questions about this policy or how we handle your information, please contact us at hello@pinnaclemillgrove.com.",
+      "Lorem ipsum dolor sit amet. If you have questions about this policy or how we handle your information, please contact us at [Company Email].",
     ],
   },
 ];

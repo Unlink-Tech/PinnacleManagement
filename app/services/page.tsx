@@ -13,7 +13,7 @@ import { homeFaqs, processSteps, services } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Our Services",
   description:
-    "Lorem ipsum dolor sit amet. E-commerce platform consultancy, foreign company management and e-commerce operations advisory.",
+    "Lorem ipsum dolor sit amet. Digital commerce strategy, international business support and business operations advisory.",
 };
 
 export default function ServicesPage() {
@@ -24,11 +24,11 @@ export default function ServicesPage() {
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Our Services" }]}
         title={
           <>
-            Three practices,{" "}
-            <span className="text-brand-600">one accountable team.</span>
+            Better direction for {" "}
+            <span className="text-brand-600">complex business environments.</span>
           </>
         }
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+        description="We help organisations navigate the technology, payments and operational decisions behind modern commerce. Our independent approach brings greater clarity to complex challenges, helping businesses establish stronger foundations and build with confidence as they grow."
       >
         <div className="mt-10 flex flex-wrap gap-3">
           <Button href="/contact" size="lg">
@@ -50,8 +50,8 @@ export default function ServicesPage() {
         <SectionHeading
           align="center"
           eyebrow="Engagement model"
-          title="A clear path, whichever service you choose."
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
+          title="A structured approach from start to finish."
+          description="Every engagement follows a clear and defined process, with each stage focused on a specific outcome. You’ll have visibility into what’s being addressed and what comes next.."
         />
         <div className="mt-16">
           <ProcessTimeline steps={processSteps} />
@@ -59,7 +59,7 @@ export default function ServicesPage() {
       </Section>
 
       {/* Comparison-style list */}
-      <Section tone="white">
+      {/* <Section tone="white">
         <SectionHeading
           eyebrow="At a glance"
           title="What's included across every engagement."
@@ -85,10 +85,10 @@ export default function ServicesPage() {
             </RevealItem>
           ))}
         </RevealGroup>
-      </Section>
+      </Section> */}
 
       {/* FAQ */}
-      <Section tone="soft">
+      {/* <Section tone="soft">
         <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
           <SectionHeading
             eyebrow="FAQ"
@@ -99,11 +99,11 @@ export default function ServicesPage() {
             <Accordion items={homeFaqs} />
           </Reveal>
         </div>
-      </Section>
+      </Section> */}
 
       <CtaBand
         eyebrow="Next step"
-        title="Not sure which service fits? Let's work it out together."
+        title="Where can we make the greatest difference?"
       />
     </>
   );

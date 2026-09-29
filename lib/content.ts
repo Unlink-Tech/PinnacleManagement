@@ -3,12 +3,12 @@ import type { IconName } from "@/components/ui/Icon";
 export const site = {
   name: "Pinnacle Millgrove",
   shortName: "Pinnacle",
-  tagline: "Clarity at every level.",
+  tagline: "Better decisions. Stronger foundations.",
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pinnacle Millgrove delivers advisory, compliance and corporate services with a straight-to-the-point approach.",
-  email: "hello@pinnaclemillgrove.com",
-  phone: "+65 6123 4567",
-  address: "1 Raffles Place, #20-01, Singapore 048616",
+    "Strategic guidance for businesses in motion. We work with organisations to improve the systems, processes and infrastructure behind their commercial operations, creating stronger foundations for long-term development.",
+  email: "[Company Email]",
+  phone: "[Company Number]",
+  address: "[Company Address]",
   hours: "Mon – Fri · 9:00am – 6:00pm",
 };
 
@@ -49,21 +49,34 @@ export type Service = {
 
 export const services: Service[] = [
   {
-    slug: "ecommerce-platform-consultancy",
-    title: "E-Commerce Platform Consultancy",
+    slug: "digital-commerce-strategy",
+    title: "Digital Commerce Strategy",
     icon: "layers",
     image: "/images/service-platform.jpg",
     imageAlt: "Analytics dashboard on a laptop screen",
     excerpt:
-      "Architecture, scalability, and payments optimisation. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    summary: LOREM_SHORT,
+      "We help businesses assess and strengthen the technology behind their digital operations, from platform architecture and system selection to payment integration and ongoing scalability. Our guidance is designed to create a more reliable foundation that can adapt as business requirements evolve.",
+    summary:
+      "We help businesses assess and strengthen the technology behind their digital operations.",
     heroKicker: "Platform",
     overview: [LOREM_LONG, LOREM_SHORT],
     capabilities: [
-      { title: "Platform Architecture", body: LOREM_SHORT },
-      { title: "Scalability & Performance", body: LOREM_SHORT },
-      { title: "Payments Optimisation", body: LOREM_SHORT },
-      { title: "Integration & APIs", body: LOREM_SHORT },
+      {
+        title: "Platform Architecture & Scalability",
+        body: "Designing technology foundations that can support evolving business requirements and future growth.",
+      },
+      {
+        title: "Technology & Vendor Evaluation",
+        body: "Assessing platforms, technical solutions and providers to identify options aligned with your business needs.",
+      },
+      {
+        title: "Payments & System Integration",
+        body: "Optimising payment infrastructure and connecting systems to create more efficient, coordinated workflows.",
+      },
+      {
+        title: "Migration & Technology Evolution",
+        body: "Planning upgrades, migrations and technology changes with minimal disruption to ongoing operations.",
+      },
     ],
     deliverables: [
       "Lorem ipsum architecture review",
@@ -89,21 +102,34 @@ export const services: Service[] = [
     ],
   },
   {
-    slug: "foreign-company-management",
-    title: "Foreign Company Management",
+    slug: "international-business-support",
+    title: "International Business Support",
     icon: "compass",
     image: "/images/service-foreign.jpg",
     imageAlt: "City lights across the earth viewed from space at night",
     excerpt:
-      "Structured support for cross-border expansion. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    summary: LOREM_SHORT,
+      "We support organisations entering new markets by helping them navigate the structural, regulatory and operational considerations involved in international expansion. Our guidance helps businesses establish practical frameworks for entering and operating across different markets with greater clarity.",
+    summary:
+      "We support organisations entering new markets by helping them navigate the structural, regulatory and operational considerations involved in international expansion.",
     heroKicker: "Expansion",
     overview: [LOREM_LONG, LOREM_SHORT],
     capabilities: [
-      { title: "Market Entry", body: LOREM_SHORT },
-      { title: "Regulatory Structure", body: LOREM_SHORT },
-      { title: "Operational Setup", body: LOREM_SHORT },
-      { title: "Cross-Border Compliance", body: LOREM_SHORT },
+      {
+        title: "Business Setup & Administration",
+        body: "Guidance on the practical requirements involved in establishing and managing operations in new markets.",
+      },
+      {
+        title: "International Business Structuring",
+        body: "Supporting the development of appropriate business structures for cross-border activities and expansion.",
+      },
+      {
+        title: "Regional Networks & Connections",
+        body: "Facilitating access to relevant regional networks and ecosystem relationships where appropriate.",
+      },
+      {
+        title: "Market Readiness & Operations",
+        body: "Preparing processes, resources and operational frameworks to support a smooth transition into new markets.",
+      },
     ],
     deliverables: [
       "Lorem ipsum market assessment",
@@ -129,21 +155,34 @@ export const services: Service[] = [
     ],
   },
   {
-    slug: "ecommerce-operations-advisory",
-    title: "E-Commerce Operations Advisory",
+    slug: "business-operations-advisory",
+    title: "Business Operations Advisory",
     icon: "radar",
     image: "/images/service-operations.jpg",
     imageAlt: "Aisle of stocked shelving in a fulfilment warehouse",
     excerpt:
-      "Operational discipline, risk mitigation, sustainable growth. Lorem ipsum dolor sit amet, consectetur.",
-    summary: LOREM_SHORT,
+      "We help businesses strengthen the processes, systems and internal structures that support day-to-day operations. By bringing greater visibility, consistency and accountability to key areas of the business, we help create an operating model that can support sustainable growth.",
+    summary:
+      "We help businesses strengthen the processes, systems and internal structures that support day-to-day operations.",
     heroKicker: "Operations",
     overview: [LOREM_LONG, LOREM_SHORT],
     capabilities: [
-      { title: "Operational Frameworks", body: LOREM_SHORT },
-      { title: "Risk Mitigation", body: LOREM_SHORT },
-      { title: "Oversight & Controls", body: LOREM_SHORT },
-      { title: "Sustainable Growth", body: LOREM_SHORT },
+      {
+        title: "Strategic & Operational Review",
+        body: "Providing ongoing guidance and structured reviews to ensure business priorities and operations remain aligned.",
+      },
+      {
+        title: "Best-Practice & Process Improvement",
+        body: "Identifying opportunities to refine business processes and align operations with relevant industry practices.",
+      },
+      {
+        title: "Risk & Operational Resilience",
+        body: "Identifying potential risks and developing practical approaches to strengthen business continuity and resilience.",
+      },
+      {
+        title: "Payment & Transaction Optimisation",
+        body: "Reviewing payment and transaction flows to improve efficiency, visibility and overall operational performance.",
+      },
     ],
     deliverables: [
       "Operations diagnostic report",
@@ -183,47 +222,47 @@ export const homeStats = [
 
 export const differentiators = [
   {
-    icon: "spark" as IconName,
-    title: "Straight to the point",
-    body: LOREM_SHORT,
+    icon: "compass" as IconName,
+    title: "Objective from the outset",
+    body: "Our recommendations are based on the requirements of your business, not commercial relationships with technology providers. We remain focused on identifying options that make sense for your objectives and operating environment.",
   },
   {
-    icon: "shield" as IconName,
-    title: "Built on trust",
-    body: LOREM_SHORT,
+    icon: "layers" as IconName,
+    title: "One view across the business",
+    body: "Technology, payments, compliance and operations rarely work in isolation. We consider how these areas interact, identifying dependencies and potential friction before they become larger operational issues.",
   },
   {
-    icon: "clock" as IconName,
-    title: "Always on time",
-    body: LOREM_SHORT,
+    icon: "radar" as IconName,
+    title: "Designed for changing demands",
+    body: "Business requirements rarely stay fixed. Our approach takes future markets, transaction volumes, currencies and operational complexity into consideration, helping create strategies that remain relevant as the business develops.",
   },
   {
-    icon: "users" as IconName,
-    title: "One senior team",
-    body: LOREM_SHORT,
+    icon: "check" as IconName,
+    title: "Focused on execution",
+    body: "Advice is most useful when it can be put into practice. We translate recommendations into clear priorities, practical next steps, responsible ownership and measurable objectives – giving teams a defined path from planning to implementation.",
   },
 ];
 
 export const processSteps = [
   {
     step: "01",
-    title: "Discovery Call",
-    body: LOREM_SHORT,
+    title: "Assess",
+    body: "We begin by developing a clear picture of your existing technology, payment processes and operational setup. This establishes the current position and highlights areas that may be limiting efficiency or creating unnecessary exposure.",
   },
   {
     step: "02",
-    title: "Tailored Proposal",
-    body: LOREM_SHORT,
+    title: "Prioritise",
+    body: "We turn our findings into a practical set of priorities, considering business impact, implementation requirements and potential risks. Key observations are supported by relevant evidence and presented in a straightforward manner.",
   },
   {
     step: "03",
-    title: "Onboarding",
-    body: LOREM_SHORT,
+    title: "Plan",
+    body: "With the priorities established, we develop a practical roadmap covering the recommended technology, processes and operating approach. Actions are sequenced according to business needs, dependencies and available resources.",
   },
   {
     step: "04",
-    title: "Ongoing Partnership",
-    body: LOREM_SHORT,
+    title: "Support",
+    body: "Our involvement can continue beyond the recommendations. Where required, we provide guidance throughout implementation, including vendor assessment, integration coordination and ongoing operational review.",
   },
 ];
 
@@ -255,33 +294,75 @@ export const testimonials = [
 ];
 
 export const values = [
-  { title: "Integrity", body: LOREM_SHORT },
-  { title: "Precision", body: LOREM_SHORT },
-  { title: "Partnership", body: LOREM_SHORT },
-  { title: "Momentum", body: LOREM_SHORT },
+  {
+    title: "Objective Thinking",
+    body: "We approach each engagement with an open perspective, considering the circumstances, priorities and requirements of the business before forming a recommendation.",
+  },
+  {
+    title: "Actionable Advice",
+    body: "Our focus is on practical solutions that can move beyond the planning stage and be translated into clear actions, responsibilities and measurable progress.",
+  },
+  {
+    title: "Ownership",
+    body: "We take responsibility for the guidance we provide and remain engaged throughout the work, maintaining consistency from initial assessment through implementation.",
+  },
+  {
+    title: "Forward Thinking",
+    body: "Markets, technologies and business requirements continue to evolve. We account for these changes when developing strategies intended to remain useful over time.",
+  },
+  {
+    title: "Long-Term Collaboration",
+    body: "We aim to build productive working relationships based on clear communication, mutual trust, and a shared focus on achieving meaningful business outcomes.",
+  },
 ];
 
 export const focusAreas: { icon: IconName; title: string; body: string }[] = [
-  { icon: "spark", title: "Founders & early-stage", body: LOREM_SHORT },
-  { icon: "layers", title: "Scaling e-commerce", body: LOREM_SHORT },
-  { icon: "compass", title: "Cross-border expansion", body: LOREM_SHORT },
-  { icon: "radar", title: "Operations-led retailers", body: LOREM_SHORT },
+  {
+    icon: "spark",
+    title: "Founders & early-stage",
+    body: "Build a solid operational and technology foundation from the outset, with practical guidance that supports the next stage of the business.",
+  },
+  {
+    icon: "layers",
+    title: "Scaling e-commerce",
+    body: "Strengthen the platforms, payment infrastructure and processes needed to handle increasing customers, transactions and operational demands.",
+  },
+  {
+    icon: "compass",
+    title: "Cross-border expansion",
+    body: "Navigate the practical challenges of entering new markets, from payment considerations and local requirements to scalable operating structures.",
+  },
+  {
+    icon: "radar",
+    title: "Operations-led retailers",
+    body: "Improve the systems and processes behind established commerce operations, creating greater consistency, visibility and control as the business evolves.",
+  },
 ];
 
 export const homeFaqs = [
-  { q: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?", a: LOREM_LONG },
-  { q: "Sed do eiusmod tempor incididunt ut labore et dolore?", a: LOREM_SHORT },
-  { q: "Ut enim ad minim veniam, quis nostrud exercitation?", a: LOREM_SHORT },
-  { q: "Duis aute irure dolor in reprehenderit in voluptate?", a: LOREM_SHORT },
+  {
+    q: "What happens when we first get in touch?",
+    a: "We begin with an initial discussion to understand your objectives, current situation and any practical limitations. This first conversation helps determine the scope of the work and whether our expertise is suited to what you are looking to achieve.",
+  },
+  {
+    q: "Do you have relationships with technology or payment providers?",
+    a: "Our advisory approach is independent of specific platforms and providers. We do not rely on reseller arrangements or referral-based recommendations, allowing potential solutions to be considered according to their suitability for your business.",
+  },
+  {
+    q: "Can you support business operating internationally?",
+    a: "Yes. We work with organisations across different markets and can provide guidance on international expansion, cross-border operations, technology infrastructure and payment considerations. Most engagements can be conducted remotely, with in-person support arranged where appropriate.",
+  },
+  {
+    q: "What will we receive at the end of an engagement?",
+    a: "The output depends on the scope of the engagement, but may include a prioritised action plan, recommendations, implementation considerations and supporting technology or operating frameworks. Where relevant, we also provide clear responsibilities, estimated effort and measures for tracking progress.",
+  },
 ];
 
 export const sectors = [
-  "DTC Brands",
-  "Marketplaces",
-  "Retail",
-  "SaaS & Subscriptions",
-  "Logistics",
-  "Cross-border",
-  "Startups",
-  "Scale-ups",
+  "Independent Advisory",
+  "Platform & Infrastructure Strategy",
+  "Payment Systems & Performance",
+  "International Market Development",
+  "Risk & Business Resilience",
+  "Operational Performance",
 ];

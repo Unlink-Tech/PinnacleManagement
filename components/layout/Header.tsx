@@ -104,7 +104,7 @@ export function Header() {
                                 <span className="block text-sm font-semibold text-ink">
                                   {s.title}
                                 </span>
-                                <span className="mt-0.5 block text-xs leading-relaxed text-ink-soft line-clamp-2">
+                                <span className="mt-0.5 block text-xs leading-relaxed text-ink-soft line-clamp-3">
                                   {s.summary}
                                 </span>
                               </span>
