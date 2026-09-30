@@ -68,7 +68,7 @@ export function ServiceShowcase({ services }: { services: Service[] }) {
                 {service.title}
               </h3>
               <p className="mt-5 max-w-xl text-lg leading-relaxed text-ink-soft">
-                {service.excerpt}
+                {service.description}
               </p>
 
               <ul className="mt-8 grid gap-x-8 gap-y-6 border-t border-line pt-8 sm:grid-cols-2">

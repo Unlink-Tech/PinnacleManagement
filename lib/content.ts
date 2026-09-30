@@ -37,6 +37,7 @@ export type Service = {
   image: string;
   imageAlt: string;
   excerpt: string;
+  description: string;
   summary: string;
   heroKicker: string;
   overview: string[];
@@ -55,9 +56,11 @@ export const services: Service[] = [
     image: "/images/service-platform.jpg",
     imageAlt: "Analytics dashboard on a laptop screen",
     excerpt:
+      "We advise businesses on the technology and infrastructure supporting their online operations. From platform selection and technical planning to payments and system improvements, we help create a setup that can evolve alongside the business.",
+    description:
       "We help businesses assess and strengthen the technology behind their digital operations, from platform architecture and system selection to payment integration and ongoing scalability. Our guidance is designed to create a more reliable foundation that can adapt as business requirements evolve.",
     summary:
-      "We help businesses assess and strengthen the technology behind their digital operations.",
+      "We advise businesses on the technology and infrastructure supporting their online operations.",
     heroKicker: "Platform",
     overview: [LOREM_LONG, LOREM_SHORT],
     capabilities: [
@@ -108,9 +111,11 @@ export const services: Service[] = [
     image: "/images/service-foreign.jpg",
     imageAlt: "City lights across the earth viewed from space at night",
     excerpt:
+      "Entering a new market brings practical considerations well beyond the initial expansion plan. We provide guidance on business structures, local requirements and operational arrangements to help organisations establish a more effective presence across borders.",
+    description:
       "We support organisations entering new markets by helping them navigate the structural, regulatory and operational considerations involved in international expansion. Our guidance helps businesses establish practical frameworks for entering and operating across different markets with greater clarity.",
     summary:
-      "We support organisations entering new markets by helping them navigate the structural, regulatory and operational considerations involved in international expansion.",
+      "We provide guidance on business structures, local requirements and operational arrangements to help organisations establish a more effective presence across borders.",
     heroKicker: "Expansion",
     overview: [LOREM_LONG, LOREM_SHORT],
     capabilities: [
@@ -161,9 +166,11 @@ export const services: Service[] = [
     image: "/images/service-operations.jpg",
     imageAlt: "Aisle of stocked shelving in a fulfilment warehouse",
     excerpt:
+      "Effective growth requires strong processes behind the scenes. We help businesses review and improve their internal operating frameworks, introducing greater structure, accountability and consistency across key areas of the organisation.",
+    description:
       "We help businesses strengthen the processes, systems and internal structures that support day-to-day operations. By bringing greater visibility, consistency and accountability to key areas of the business, we help create an operating model that can support sustainable growth.",
     summary:
-      "We help businesses strengthen the processes, systems and internal structures that support day-to-day operations.",
+      "We help businesses review and improve their internal operating frameworks, introducing greater structure, accountability and consistency across key areas of the organisation.",
     heroKicker: "Operations",
     overview: [LOREM_LONG, LOREM_SHORT],
     capabilities: [
