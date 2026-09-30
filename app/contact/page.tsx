@@ -52,8 +52,8 @@ export default function ContactPage() {
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Contact Us" }]}
         title={
           <>
-            Have something to 
-            <span className="text-brand-600">solve?</span>
+            Have something
+            <span className="text-brand-600"> to solve?</span>
           </>
         }
         description="Whether you’re reviewing your current infrastructure or preparing for the next stage of growth, we’re ready to hear about it. Send us an overview of your requirements and our team will respond within one business day."

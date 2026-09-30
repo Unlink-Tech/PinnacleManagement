@@ -155,6 +155,7 @@ export default function AboutPage() {
       <CtaBand
         eyebrow="Work with us"
         title="Move forward with confidence"
+        description="Share your objectives and the challenges you're facing. We'll take the time to understand the broader picture, assess your priorities and identify where our expertise can provide practical value."
       />
     </>
   );

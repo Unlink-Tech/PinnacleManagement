@@ -94,7 +94,7 @@ export function Header() {
                           {services.map((s) => (
                             <Link
                               key={s.slug}
-                              href={`/services/${s.slug}`}
+                              href="/services"
                               className="group flex items-start gap-3 rounded-2xl p-3 transition-colors hover:bg-brand-50"
                             >
                               <span className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-brand-100 text-brand-700 transition-colors group-hover:bg-brand-600 group-hover:text-white">
@@ -180,7 +180,7 @@ export function Header() {
                   {services.map((s) => (
                     <Link
                       key={s.slug}
-                      href={`/services/${s.slug}`}
+                      href="/services"
                       className="flex items-center gap-3 rounded-2xl border border-line p-3 text-sm font-medium text-ink transition-colors hover:border-brand-300 hover:bg-brand-50"
                     >
                       <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-brand-100 text-brand-700">

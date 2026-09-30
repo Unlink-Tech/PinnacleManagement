@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import { Card } from "@/components/ui/Card";
 import { Icon } from "@/components/ui/Icon";
 import type { Service } from "@/lib/content";
@@ -13,10 +12,7 @@ export function ServiceCard({
 }) {
   return (
     <Card className="h-full">
-      <Link
-        href={`/services/${service.slug}`}
-        className="flex h-full flex-col"
-      >
+      <div className="flex h-full flex-col">
         {/* Image header */}
         <div className="relative aspect-16/10 overflow-hidden">
           <Image
@@ -48,22 +44,13 @@ export function ServiceCard({
           <p className="mt-3 flex-1 text-[0.95rem] leading-relaxed text-ink-soft">
             {service.excerpt}
           </p>
-
-          <span className="mt-7 inline-flex items-center gap-2 text-sm font-semibold text-brand-700">
-            Learn more
-            <Icon
-              name="arrowUpRight"
-              className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
-              strokeWidth={2}
-            />
-          </span>
         </div>
 
         <span
           aria-hidden
           className="absolute inset-x-0 bottom-0 h-1 origin-left scale-x-0 bg-gradient-to-r from-brand-500 to-brand-800 transition-transform duration-500 group-hover:scale-x-100"
         />
-      </Link>
+      </div>
     </Card>
   );
 }

@@ -1,83 +1,77 @@
 import type { LegalSection } from "@/components/sections/LegalLayout";
 
-const P1 =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
-const P2 =
-  "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
-
-export const lastUpdated = "22 July 2026";
+export const lastUpdated = "30 September 2026";
 
 export const privacySections: LegalSection[] = [
   {
     id: "introduction",
     heading: "Introduction",
-    body: [P1, P2],
+    body: [
+      "Pinnacle Millgrove (“Pinnacle”, “we”, “us”, or “our”) respects your privacy and is committed to protecting the personal information you provide when using our website.",
+    ],
   },
   {
     id: "information-we-collect",
     heading: "Information We Collect",
-    body: [P1],
-    list: [
-      "Lorem ipsum identity and contact details",
-      "Consectetur adipiscing business information",
-      "Sed do eiusmod technical and device data",
-      "Tempor incididunt usage and analytics data",
-      "Ut labore marketing and communication preferences",
+    body: [
+      "We may collect information you provide directly, such as your name, contact details, company information and enquiry details. We may also collect basic technical information when you use our website.",
     ],
   },
   {
     id: "how-we-use",
     heading: "How We Use Your Information",
-    body: [P1, P2],
+    body: [
+      "We use your information to respond to enquiries, provide our services, communicate with you, improve our website and meet applicable legal or business requirements.",
+    ],
   },
   {
     id: "legal-basis",
     heading: "Legal Basis for Processing",
-    body: [P2],
-    list: [
-      "Performance of a contract",
-      "Compliance with a legal obligation",
-      "Legitimate interests, balanced against your rights",
-      "Consent, where required",
+    body: [
+      "Where applicable, we process personal information based on your consent, contractual requirements, legitimate business interests, or other lawful grounds permitted by applicable law.",
     ],
   },
   {
     id: "sharing",
     heading: "Sharing and Disclosure",
-    body: [P1, P2],
+    body: [
+      "We do not sell your personal information. Information may be shared with trusted service providers or professional advisers where necessary to operate our business, provide services, or meet legal obligations.",
+    ],
   },
   {
     id: "retention",
     heading: "Data Retention",
-    body: [P1],
+    body: [
+      "We retain personal information only for as long as reasonably necessary for the purposes for which it was collected or as required by applicable law.",
+    ],
   },
   {
     id: "security",
     heading: "Security Measures",
-    body: [P2],
+    body: [
+      "We take reasonable technical and organisational measures to protect personal information against unauthorised access, loss, misuse, or disclosure.",
+    ],
   },
   {
     id: "your-rights",
     heading: "Your Rights",
-    body: [P1],
-    list: [
-      "Request access to your personal data",
-      "Request correction of inaccurate data",
-      "Request erasure where applicable",
-      "Object to or restrict processing",
-      "Withdraw consent at any time",
+    body: [
+      "Depending on applicable law, you may have rights to access, correct, delete, or otherwise control how your personal information is processed. Requests may be made using our contact details below.",
     ],
   },
   {
     id: "cookies",
     heading: "Cookies and Tracking",
-    body: [P2],
+    body: [
+      "Our website may use cookies and similar technologies to support functionality, understand website usage and improve your experience. You can manage cookies through your browser settings.",
+    ],
   },
   {
     id: "contact",
     heading: "Contact Us",
     body: [
-      "Lorem ipsum dolor sit amet. If you have questions about this policy or how we handle your information, please contact us at [Company Email].",
+      "If you have any questions about this Privacy Policy or how we handle your personal information, please contact us through the contact details provided on our website.",
+      "We may update this Privacy Policy from time to time. Continued use of the website following any revisions indicates acceptance of the updated policy.",
     ],
   },
 ];
@@ -86,64 +80,78 @@ export const termsSections: LegalSection[] = [
   {
     id: "agreement",
     heading: "Agreement to Terms",
-    body: [P1, P2],
+    body: [
+      "By accessing or using the Pinnacle Millgrove website, you agree to be bound by these Terms of Service. If you do not agree with these terms, please do not use the website.",
+    ],
   },
   {
     id: "use-of-site",
     heading: "Use of the Website",
-    body: [P1],
-    list: [
-      "Use the site only for lawful purposes",
-      "Do not attempt to gain unauthorised access",
-      "Do not interfere with the operation of the site",
-      "Do not reproduce content without permission",
+    body: [
+      "You agree to use the website lawfully and responsibly. You must not use the website in any way that may damage, disrupt, or interfere with its operation or security.",
     ],
   },
   {
     id: "services",
     heading: "Our Services",
-    body: [P1, P2],
+    body: [
+      "Information provided on this website is for general informational purposes and does not constitute a formal engagement or guarantee of any particular business outcome. Specific services and engagements are subject to separate agreed terms where applicable.",
+    ],
   },
   {
     id: "intellectual-property",
     heading: "Intellectual Property",
-    body: [P2],
+    body: [
+      "All content on this website, including text, graphics, branding and other materials, is owned by or licensed to Pinnacle Millgrove and may not be reproduced or used without appropriate permission.",
+    ],
   },
   {
     id: "user-content",
     heading: "User Submissions",
-    body: [P1],
+    body: [
+      "Where you submit information, enquiries, or other materials through the website, you are responsible for ensuring that the information provided is accurate and that you have the right to provide it.",
+    ],
   },
   {
     id: "disclaimers",
     heading: "Disclaimers",
-    body: [P2, P1],
+    body: [
+      "While we aim to keep the information on our website accurate and current, we make no guarantee that all content is complete, accurate, or continuously available. Website content should not be relied upon as professional, legal, tax, or financial advice.",
+    ],
   },
   {
     id: "liability",
     heading: "Limitation of Liability",
-    body: [P2],
+    body: [
+      "To the extent permitted by applicable law, Pinnacle Millgrove will not be liable for any indirect, incidental, or consequential loss arising from your use of, or reliance on, the website or its content.",
+    ],
   },
   {
     id: "third-party",
     heading: "Third-Party Links",
-    body: [P1],
+    body: [
+      "Our website may contain links to third-party websites. These links are provided for convenience, and Pinnacle Millgrove is not responsible for the content, security, or practices of external websites.",
+    ],
   },
   {
     id: "termination",
     heading: "Termination",
-    body: [P2],
+    body: [
+      "We reserve the right to restrict or terminate access to the website where we consider it necessary, including where these Terms of Service have been breached.",
+    ],
   },
   {
     id: "governing-law",
     heading: "Governing Law",
-    body: [P1],
+    body: [
+      "These Terms of Service shall be governed by and interpreted in accordance with the laws of the applicable jurisdiction of Pinnacle Millgrove.",
+    ],
   },
   {
     id: "changes",
     heading: "Changes to These Terms",
     body: [
-      "Lorem ipsum dolor sit amet. We may update these terms from time to time. The version published on this page is the version that applies.",
+      "We may revise these Terms of Service from time to time. Continued use of the website following any revisions indicates acceptance of the updated terms.",
     ],
   },
 ];

@@ -104,6 +104,7 @@ export default function ServicesPage() {
       <CtaBand
         eyebrow="Next step"
         title="Where can we make the greatest difference?"
+        description="Share the challenge you’re facing, and we’ll assess where our expertise can provide the most relevant support. If another approach or specialist is better suited to your needs, we’ll be clear about that too."
       />
     </>
   );

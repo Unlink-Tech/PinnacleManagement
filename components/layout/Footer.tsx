@@ -1,10 +1,8 @@
 import Link from "next/link";
-import { legalNav, nav, services, site } from "@/lib/content";
+import { legalNav, nav, site } from "@/lib/content";
 import { Container } from "@/components/ui/Container";
 import { Icon, type IconName } from "@/components/ui/Icon";
 import { LogoMark } from "@/components/ui/Logo";
-import { Button } from "@/components/ui/Button";
-import { Reveal } from "@/components/ui/Reveal";
 
 const socials: { name: IconName; href: string; label: string }[] = [
   { name: "linkedin", href: "#", label: "LinkedIn" },
@@ -35,7 +33,7 @@ export function Footer() {
         
 
         {/* Link columns */}
-        <div className="grid gap-12 py-16 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
+        <div className="grid gap-12 py-16 sm:grid-cols-2 lg:grid-cols-[1.3fr_1.3fr_1.2fr] lg:gap-16">
           <div>
             <div className="group flex items-center gap-3">
               <LogoMark />
@@ -66,24 +64,13 @@ export function Footer() {
           </div>
 
           <FooterCol title="Company">
-            {nav.map((n) => (
-              <FooterLink key={n.href} href={n.href}>
-                {n.label}
-              </FooterLink>
-            ))}
-            {legalNav.map((n) => (
-              <FooterLink key={n.href} href={n.href}>
-                {n.label}
-              </FooterLink>
-            ))}
-          </FooterCol>
-
-          <FooterCol title="Services">
-            {services.map((s) => (
-              <FooterLink key={s.slug} href={`/services/${s.slug}`}>
-                {s.title}
-              </FooterLink>
-            ))}
+            <div className="grid w-fit grid-flow-col grid-cols-2 grid-rows-3 gap-x-12 gap-y-3.5">
+              {[...nav, ...legalNav].map((n) => (
+                <FooterLink key={n.href} href={n.href}>
+                  {n.label}
+                </FooterLink>
+              ))}
+            </div>
           </FooterCol>
 
           <FooterCol title="Get in touch">

@@ -79,10 +79,10 @@ export default function HomePage() {
         eyebrow="Why Pinnacle"
         title={
           <>
-            We believe effective advisory starts with clear communication and continues through every stage of the relationship.
+            Clarity at every level, from the first call to a long-term partnership.
           </>
         }
-        description="From the initial conversation to ongoing support, we keep priorities, decisions and next steps transparent and aligned with your business objectives."
+        description="We believe effective advisory starts with clear communication and continues through every stage of the relationship. From the initial conversation to ongoing support, we keep priorities, decisions and next steps transparent and aligned with your business objectives."
         stats={[
           { value: "24h", label: "Response time" },
           { value: "100%", label: "Senior-led delivery" },
@@ -97,7 +97,7 @@ export default function HomePage() {
           <div>
             <SectionHeading
               eyebrow="Why Pinnacle"
-              title="Advise shaped by your interests."
+              title="Advice shaped by your interests."
               description="Our recommendations are guided by your business requirements rather than predetermined technology or vendor preferences. We assess available options objectively, explain the practical considerations clearly, and focus on solutions that align with your objectives, resources, and long-term plans."
             />
             <Reveal delay={0.2}>
