@@ -9,6 +9,9 @@ import { Card } from "@/components/ui/Card";
 import { ContactForm } from "@/components/sections/ContactForm";
 import { homeFaqs, site } from "@/lib/content";
 
+// Hidden until the live server's Content-Security-Policy allows framing Google Maps.
+const SHOW_MAP = false;
+
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
@@ -98,29 +101,31 @@ export default function ContactPage() {
           </Reveal>
 
           <Reveal delay={0.12} className="flex flex-col gap-6">
-            <div className="relative aspect-4/3 overflow-hidden rounded-[2rem] border border-line bg-brand-50">
-              <iframe
-                title={`Map showing ${site.legalName}, ${site.address}`}
-                src={`https://www.google.com/maps?q=${encodeURIComponent(site.mapQuery)}&z=16&output=embed`}
-                className="absolute inset-0 h-full w-full border-0"
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                allowFullScreen
-              />
-              <div className="absolute inset-x-5 bottom-5 rounded-2xl border border-line bg-white/90 p-5 backdrop-blur">
-                <p className="text-sm font-semibold text-ink">{site.legalName}</p>
-                <p className="mt-1 text-sm text-ink-soft">{site.address}</p>
-                <a
-                  href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(site.mapQuery)}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-700 hover:text-brand-800"
-                >
-                  <Icon name="pin" className="h-4 w-4" />
-                  Get directions
-                </a>
+            {SHOW_MAP && (
+              <div className="relative aspect-4/3 overflow-hidden rounded-[2rem] border border-line bg-brand-50">
+                <iframe
+                  title={`Map showing ${site.legalName}, ${site.address}`}
+                  src={`https://www.google.com/maps/embed?origin=mfe&pb=!1m3!2m1!1s${encodeURIComponent(site.mapQuery)}!6i16`}
+                  className="absolute inset-0 h-full w-full border-0"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  allowFullScreen
+                />
+                <div className="absolute inset-x-5 bottom-5 rounded-2xl border border-line bg-white/90 p-5 backdrop-blur">
+                  <p className="text-sm font-semibold text-ink">{site.legalName}</p>
+                  <p className="mt-1 text-sm text-ink-soft">{site.address}</p>
+                  <a
+                    href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(site.mapQuery)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-700 hover:text-brand-800"
+                  >
+                    <Icon name="pin" className="h-4 w-4" />
+                    Get directions
+                  </a>
+                </div>
               </div>
-            </div>
+            )}
 
             <div className="rounded-[2rem] border border-line bg-white p-7">
               <h3 className="text-xs font-semibold uppercase tracking-[0.18em] text-ink-soft">
