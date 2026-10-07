@@ -110,7 +110,7 @@ export function Footer() {
 
         <div className="flex flex-col items-center justify-between gap-4 border-t border-white/10 py-8 text-xs text-brand-100/60 sm:flex-row">
           <p>
-            © {new Date().getFullYear()} {site.name}. All rights reserved.
+            © {new Date().getFullYear()} {site.legalName} All rights reserved.
           </p>
           <div className="flex gap-6">
             {legalNav.map((n) => (

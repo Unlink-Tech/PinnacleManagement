@@ -2,13 +2,15 @@ import type { IconName } from "@/components/ui/Icon";
 
 export const site = {
   name: "Pinnacle Millgrove",
+  legalName: "Pinnacle Millgrove Sdn. Bhd.",
   shortName: "Pinnacle",
   tagline: "Better decisions. Stronger foundations.",
   description:
     "Strategic guidance for businesses in motion. We work with organisations to improve the systems, processes and infrastructure behind their commercial operations, creating stronger foundations for long-term development.",
-  email: "[Company Email]",
-  phone: "[Company Number]",
-  address: "[Company Address]",
+  email: "admin.pinnaclemgt@gmail.com",
+  phone: "+6011 6090 6387",
+  address: "Level 15, KPMG Tower, Bandar Utama, 47800 Petaling Jaya, Selangor.",
+  mapQuery: "KPMG Tower, Bandar Utama, 47800 Petaling Jaya, Selangor, Malaysia",
   hours: "Mon – Fri · 9:00am – 6:00pm",
 };
 
